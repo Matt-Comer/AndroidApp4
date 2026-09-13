@@ -1,60 +1,75 @@
-SuperPodcast
-SuperPodcast is an Android podcast application created for Assignment 7. It uses the iTunes Search API to find podcasts, display real episodes, save subscriptions, and play episode audio.
-Features
-- Search for podcasts using the iTunes Search API
-- Display matching podcast titles and creators
-- Filter results by podcast-title word count
-  - All titles
-  - Titles containing 1–3 words
-  - Titles containing 4 or more words
-- Open a selected podcast and retrieve its real episodes
-- Play and stop podcast episode audio
-- Subscribe and unsubscribe from a podcast
-- Save subscriptions locally so they remain after the app restarts
-- Display loading indicators and basic API error messages
-Technology Used
+# AndroidApp4 – Podcast App
+
+**Student:** Matthew Comer  
+**Course:** Mobile Web & App Development  
+**Module:** Android Development  
+**Assignment:** Assignment 7 / Assignment 8  
+
+## Project Overview
+
+AndroidApp4 is a podcast application built with Kotlin and Jetpack Compose.
+
+The project was first developed for Assignment 7 to create the core podcast functionality. For Assignment 8, the application was improved and polished while keeping the original project structure and functionality.
+
+The podcast theme used for my application is The Tragically Hip.
+
+## Features
+
+- Podcast home screen
+- Episode listing
+- Play and stop controls
+- Volume control
+- Subscribe functionality
+- Subscription storage
+- Navigation between screens
+- Repository structure for podcast data
+- Separate player functionality
+- Custom user interface built with Jetpack Compose
+- Polished layout and styling for Assignment 8
+
+## Tech Stack
+
 - Kotlin
 - Android Studio
 - Jetpack Compose
-- Retrofit
-- Gson converter
-- Kotlin coroutines
-- Android MediaPlayer
-- Android SharedPreferences
-- iTunes Search API
-Project Structure
-data/
-  PodcastResponse.kt       Podcast and episode data classes
+- Material 3
+- Gradle
+- Android Emulator
+- Git
+- GitHub
 
-player/
-  PodcaastPlayer.kt        Episode audio playback
+## Project Structure
 
-repository/
-  PodfcastRepository.kt    Retrofit API requests
+The application is separated into packages to keep each part of the project organized:
 
-storage/
-  SubscriptionStorage.kt   Locally saved subscriptions
+- `data` – podcast response and data models
+- `repository` – handles podcast data
+- `player` – handles podcast playback
+- `storage` – manages subscription information
+- `ui` – contains the application screens
+- `ui/theme` – contains the Compose theme and styling
 
-ui/
-  PodcastSceen.kt          Search results and word-count filtering
-  EpisodeScreen.kt         Episodes, subscriptions, and playback controls
+## What I Learned
 
-MainActivity.kt            Switches between the search and episode screens
-How the App Works
-1. Enter a podcast name in the search field.
-2. Select Search to retrieve matching podcasts.
-3. Use the filter button to show all titles, 1–3 word titles, or titles with 4 or more words.
-4. Select a podcast to load its episodes.
-5. Use Subscribe or Unsubscribe to save the podcast preference.
-6. Use Play and Stop to control episode audio.
-7. Select Back to Podcasts to return to the search results.
-Running the Project
-1. Open the project in Android Studio.
-2. Allow Gradle to finish syncing.
-3. Start an Android emulator or connect an Android device.
-4. Run the app configuration.
-5. An internet connection is required for podcast searches, episode retrieval, and playback.
-Repository
-GitHub – AndroidApp4
-Author
-Matthew Comer
+This project helped me better understand how different parts of an Android application work together.
+
+One of the biggest things I learned was that even though languages such as Kotlin and Swift use different syntax, the overall structure and programming concepts are similar. Working with separate data, UI, repository, storage, and player files helped me see those connections more clearly.
+
+I also became more comfortable testing features in the emulator, troubleshooting problems, and understanding where different functionality belongs within an application.
+
+## Assignment 7
+
+Assignment 7 contains the initial working version of the Podcast App and establishes the core project structure and functionality.
+
+## Assignment 8
+
+Assignment 8 builds on Assignment 7 by polishing the application and improving the user experience while maintaining the original functionality.
+
+## AI Reflection
+
+An AI usage reflection is included with the project describing how AI was used as a support and learning tool during development.
+
+## Author
+
+Matthew Comer  
+Mobile Web & App Development
